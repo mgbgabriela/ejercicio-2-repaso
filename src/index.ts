@@ -15,13 +15,17 @@ let comB : number[]= [3,6,8,5,4,7,7,4,6,8];
 let comC : number[]= [7,6,9,8,9,8,5,7,10,9];
 let indice: number = 0;
     
-   //let calcularPromedio = (com: number[]) =>{
+   let calcularPromedio = (com: number[]) =>{
      let suma: number= 0;
      let promedio : number = 0;
     for (indice= 0; indice < 10; indice++){
-      suma += comA[indice];
+      suma += com[indice];
       promedio = suma/10;
       
-    }console.log(promedio)
+    } return promedio;
 }
-  //console.log(calcularPromedio(comA)) 
+  console.log(calcularPromedio(comA));
+  console.log(calcularPromedio(comB));
+  console.log(calcularPromedio(comC));
+
+   
